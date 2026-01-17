@@ -32,7 +32,7 @@ export const uploadDocument = async (req, res, next) => {
     }
 
     // Construct the URL for the uploaded file
-    const baseUrl = process.env.BACKEND_URL;
+    const baseUrl = process.env.VITE_API_BASE_URL;
     const fileUrl = `${baseUrl}/uploads/documents/${req.file.filename}`;
 
     // Create document record
